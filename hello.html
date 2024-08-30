@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ 
+ 
+ <style>
+    *{
+
+         padding: 0px;
+         margin: 0px;
+         box-sizing: border-box;
+         
+
+
+    }
+    
+   
+    .container1{
+
+        height: 80px;
+        display: flex;
+     
+    }
+    .container1 .web_title{
+
+        flex: 1;
+        
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+       font-family: "Italianno", cursive;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 20px;
+       margin-left: 20px;
+       margin-right: 20px;
+       color: rgb(32, 32, 32);
+       white-space: nowrap;
+       overflow: hidden;
+      
+       
+
+
+    }
+    .container1 .web_title h1{
+
+        text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+   
+    }
+
+    
+    .container1 .navigation_list{
+
+        flex: 1;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+  
+        
+
+    }
+    .container1 .navigation_list div{
+
+        display: flex;
+       
+        
+        
+    }
+
+    .container1 .navigation_list ul{
+
+   list-style: none;
+   display: flex;
+   
+}
+
+   
+    .container1 .navigation_list ul li{
+
+        padding: 0px 50px;
+       font-family: "Poppins";
+       font-weight: 600;
+       font-style: normal;
+
+        
+    }
+
+    .menubar i{
+
+font-size: 40px;
+font-weight: bold;
+color: rgb(18, 18, 17);
+display: none;
+
+}
+
+
+
+li.clicked{
+
+background-color: rgb(19, 18, 18);
+}
+
+.welcome_container{
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+
+}
+
+.welcome_container .welcome_container2{
+
+
+
+width: 900px;
+padding-top: 90px;
+display: flex;
+
+
+
+
+
+
+}
+
+.welcome_container3{
+
+width: 500px;
+margin-right: 60px;
+margin-left: 60px;
+
+
+
+}
+
+#welcome_text{
+
+font-family: 'Poppins',sans-serif;
+width: 500px;
+padding-bottom: 30px;
+
+
+}
+
+.welcome_para{
+
+
+font-weight: lighter;
+color: rgb(136, 135, 135);
+margin-bottom: 10px;
+margin-left: 20px;
+
+
+}
+
+.robo_image{
+
+width: 500px;
+margin-right: 60px;
+margin-left: 60px;
+margin-top: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/*image animation*/
+.animate-image {
+
+height: auto;
+animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-50px);
+}
+}
+
+/*Button related code*/
+
+.button_container{
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.button_container2{
+
+width: 400px;
+padding-top: 40px;
+padding-bottom: 40px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-right: 350px;
+}
+
+.button_container2 > :nth-child(1){
+
+background-color: #24BF7C;
+border: none;
+padding: 15px 10px;
+border-radius: 5%;
+color: white;
+font-weight: bold;
+
+}
+
+.button_container2 > :nth-child(2){
+
+background-color: #EA7F45;
+border: none;
+padding: 15px 10px;
+border-radius: 5%;
+color: white;
+font-weight: bold;
+
+}
+
+.services_container{
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Poppins",sans-serif;
+margin-top: 40px;
+
+
+}
+
+.services_content{
+
+
+
+display: flex;
+justify-content: center;
+
+margin-top: 100px;
+}
+
+.services_content2{
+
+
+    width: 1000px;
+ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.services_content3{
+
+width: 200px;
+border: 2px solid black;
+border-radius: 20px;
+font-family: "inter";
+margin: 40px 40px;
+}
+
+.services_content3 .service_title{
+
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px 5px 5px;
+}
+
+.services_content3 .service_icon{
+
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 5px 5px 5px 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.services_content3 .service_icon i{
+
+    font-size: 60px;
+    color: white;
+}
+.services_content3 .service_icon div{
+
+    background-color: rgb(14, 14, 13);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.services_content3 .service_para{
+
+    margin: 10px 10px 10px 10px;
+}
+
+.services_content3 .telegram{
+
+    width: 95px;
+}
+
+.webhook{
+
+width: 60px;
+margin-bottom: 10px;
+
+}
+
+.others{
+
+    color: white;
+    font-size: 15px;
+}
+.email_continer{
+
+    background-color: #536CCE;
+    height: 800px;
+}
+@media screen and (max-width:900px){
+
+
+
+
+
+    .button_container2{
+
+
+width: 400px;
+padding-top: 40px;
+padding-bottom: 40px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-right: 0px;
+}
+
+
+
+
+    h1{
+
+text-overflow: ellipsis;
+}
+
+    
+    .menubar i{
+
+font-size: 30px;
+font-weight: bold;
+color: rgb(18, 18, 17);
+display: block;
+z-index: 100;
+
+}
+
+
+
+
+.container1 .navigation_list{
+
+flex: 1;
+
+display: flex;
+align-items: center;
+justify-content: flex-end;
+flex-grow: 0;
+
+}
+
+
+.container1 .navigation_list div{
+
+margin-right: 30px;
+
+}
+
+
+
+
+
+
+
+.container1 .navigation_list {
+
+position: relative;
+
+}
+/*for responsive navi bar*/
+.navi_options{
+
+
+    
+    position: absolute;
+    width: 200px;
+    top: 50px;
+    right: 0px;
+    left: -200px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 90deg 10 10 10 10;
+    background-color: white;
+    box-shadow: 10px 10px 30px rgb(172, 171, 171);
+    
+
+
+}
+#navi{
+display: none;
+
+}
+.navi_options li{
+
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    
+}
+
+.navi_options li:hover{
+
+    background-color: rgb(166, 167, 166);
+}
+
+.navi_options li a{
+
+    display: block;
+    text-decoration: none;
+}
+
+.welcome_container .welcome_container2{
+
+
+
+width: 900px;
+padding-top: 90px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: cent;
+
+
+
+
+}
+
+
+
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+
+
+<div class="container1">
+    <div class="web_title">
+        <h1>Techpinches Bot Creation</h1>
+    </div>
+    <div class="navigation_list" >
+        <div class="menubar" id="m">
+            <i class="fa-solid fa-bars" style="color: rgb(119, 117, 115);"></i>
+        </div>
+        <ul id="navi" class="navi_options" >
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+        
+   </div>
+</div>
+
+<div class="welcome_container">
+    <div class="welcome_container2">
+        <div class="welcome_container3">
+            <div id="welcome_text">
+                <h1>Welcome to our bot creation platform</h1>
+            </div>
+            <div class="welcome_para">
+                <h4>We specialize in creating tailored bot solutions for Facebook, Instagram, Messenger, and beyond. Whether you're looking to enhance customer engagement, streamline your operations, or drive more conversions, we’ve got you covered.</h4>
+           
+            </div>
+            <div class="welcome_para">
+                
+                Explore our range of custom bot services and discover how we can help you achieve your business goals. If you have any questions or need personalized support, feel free to reach out!/</h4>
+           
+            </div>
+
+            
+        </div>
+        <div class="robo_image">
+            <img src="Group 16.png" width="200px" class="animate-image">
+        </div>
+
+    </div>
+</div>
+<div class="button_container">
+    <div class="button_container2">
+        <button>Get Started</button>
+        <button>Get a Quote</button>
+    </div>
+</div>
+
+
+<div class="services_container">
+    <h3>Services</h3>
+</div>
+<div class="services_content">
+    <div class="services_content2">
+        <div class="services_content3">
+            <div class="service_title">
+                <h3>Facebook Bot</h3>
+            </div>
+            <div class="service_icon">
+                <div>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="service_para">
+                <p>Automate interactions on Facebook pages and groups with powerful bots.</p>
+            </div>
+        </div>
+        <div class="services_content3">
+            <div class="service_title">
+                <h3>Instagram Bot</h3>
+            </div>
+            <div class="service_icon">
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="service_para">
+                <p>Enhance your Instagram presence with bots that manage posts and interactions.</p>
+            </div>
+        </div>
+        <div class="services_content3">
+            <div class="service_title">
+                <h3>Telegram Bot</h3>
+            </div>
+            <div class="service_icon">
+                <img src="telegram-brands-solid.svg" class="telegram">
+            </div>
+            <div class="service_para">
+                <p>Automate interactions on Facebook pages and groups with powerful bots.</p>
+            </div>
+        </div>
+        <div class="services_content3">
+            <div class="service_title">
+                <h3>Facebook Bot</h3>
+            </div>
+            <div class="service_icon">
+                <div>
+                 
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+            <div class="service_para">
+                <p>Automate interactions on Facebook pages and groups with powerful bots.</p>
+            </div>
+        </div>
+        <div class="services_content3">
+            <div class="service_title">
+                <h3>Messenger Bot</h3>
+            </div>
+            <div class="service_icon">
+                <div>
+               
+                       <i class="fab fa-facebook-messenger"></i>
+                </div>
+                
+            </div>
+            <div class="service_para">
+                <p>Engage with your users on Facebook Messenger with intelligent bots.</p>
+            </div>
+        </div>
+        <div class="services_content3">
+            <div class="service_title">
+                <h3>Webhook Bot</h3>
+            </div>
+            <div class="service_icon">
+                <div>
+                    <img src="webhooks-svgrepo-com (1).svg" class="webhook" >
+                </div>
+            </div>
+            <div class="service_para">
+                <p>Automate interactions on Facebook pages and groups with powerful bots.</p>
+            </div>
+        </div>
+        <div class="services_content3">
+            <div class="service_title">
+                <h3>Others Bot</h3>
+            </div>
+            <div class="service_icon">
+                <div>
+                    <h1 class="others">Others+</h1>
+                </div>
+            </div>
+            <div class="service_para">
+                <p>Automate interactions on Facebook pages and groups with powerful bots.</p>
+            </div>
+        </div>
+    
+     
+    </div>
+</div>
+<div class="email_continer">
+    <h1>Hello</h1>
+
+
+</div>
+
+
+
+<script>
+
+if(window.matchMedia("(max-width:900px)").matches){
+let a=document.getElementById("navi");
+
+a.style.display='none';
+
+        a.addEventListener('click',function(){
+
+
+
+
+         let b=a.style.display;
+
+         
+
+
+            if(b === 'block'){
+            a.style.display="none";
+            b=a.style.display;
+            }
+            
+       }
+    );
+
+    let c=document.getElementById("m");
+
+    c.addEventListener('click',function(){
+
+
+
+     a.style.display="block";
+
+
+    });
+
+    let d=document.getElementsByClassName("menubar");
+
+c.addEventListener('click',function(){
+
+
+
+ a.style.display="block";
+
+
+});
+
+
+
+}
+    
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
